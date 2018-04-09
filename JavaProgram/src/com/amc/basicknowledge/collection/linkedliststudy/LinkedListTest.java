@@ -21,6 +21,7 @@ public class LinkedListTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LinkedList<String> list = new LinkedList<String>();
+		
 		list.add("语文: 1");
 		list.add("数学: 2");
 		list.add("英语: 3");

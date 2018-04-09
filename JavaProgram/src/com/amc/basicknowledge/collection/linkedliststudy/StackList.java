@@ -1,5 +1,6 @@
 package com.amc.basicknowledge.collection.linkedliststudy;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
@@ -41,7 +42,14 @@ public class StackList {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		StackList stackList=new StackList();
+		stackList.add(3);
+		stackList.add(2);
+		stackList.add(1);
+		int size=stackList.size();
+		for(int i=0;i<size;i++){
+			System.out.println(stackList.pop());
+		}
 	}
 
 }
