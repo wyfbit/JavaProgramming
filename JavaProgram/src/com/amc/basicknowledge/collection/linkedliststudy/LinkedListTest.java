@@ -1,5 +1,6 @@
 package com.amc.basicknowledge.collection.linkedliststudy;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -33,6 +34,7 @@ public class LinkedListTest {
 		System.out.println("获取末尾位置元素："+list.getLast());
 		System.out.println("删除集合中的首位置元素并返回："+ list.removeFirst());
 		System.out.println("删除集合中的末尾素并返回："+ list.removeLast()); 
+
 		
 		list.push("狗蛋： 01");
 		System.out.println("删除集合的首元素："+list.pop()); // 移除并返回集合中的第一个元素  
