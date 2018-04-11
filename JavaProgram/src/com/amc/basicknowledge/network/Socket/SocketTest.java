@@ -2,6 +2,7 @@ package com.amc.basicknowledge.network.Socket;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
@@ -40,6 +41,14 @@ public class SocketTest {
 					return 0;
 				}
 			};*/
+			InetAddress[] address=InetAddress.getAllByName("www.baidu.com");
+			for(int i=0;i<address.length;i++){
+				System.out.println(address[i].getAddress().toString());
+			}
+			InetAddress addressLocal=InetAddress.getLocalHost();
+			System.out.println(addressLocal.toString());
+			/*byte[] ipAddress=address.getAddress();
+			System.out.println(address.getAddress());*/
 		}
 		catch (Exception e) {
 			// TODO: handle exception
