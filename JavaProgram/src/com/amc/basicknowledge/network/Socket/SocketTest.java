@@ -49,6 +49,46 @@ public class SocketTest {
 			System.out.println(addressLocal.toString());
 			/*byte[] ipAddress=address.getAddress();
 			System.out.println(address.getAddress());*/
+			Runnable runnable=new Runnable() {
+				
+				@Override
+				public void run() {
+					// TODO Auto-generated method stub
+					
+				}
+			};
+			
+			System.out.println("**************************");
+			//使用域名创建对象
+
+            InetAddress inet1 = InetAddress.getByName("www.163.com");
+
+            System.out.println(inet1);//www.baidu.com/119.75.216.20
+
+            //使用IP创建对象
+
+            InetAddress inet2 = InetAddress.getByName("127.0.0.1");
+
+            System.out.println(inet2);
+
+            //获得本机地址对象
+
+            InetAddress inet3 = InetAddress.getLocalHost();
+
+            System.out.println(inet3);
+          //获得对象中存储的域名
+
+            String host = inet3.getHostName();
+
+            System.out.println("域名：" + host);
+
+            //获得对象中存储的IP
+
+            String ip = inet3.getHostAddress();
+
+            System.out.println("IP:" + ip);
+
+
 		}
 		catch (Exception e) {
 			// TODO: handle exception
