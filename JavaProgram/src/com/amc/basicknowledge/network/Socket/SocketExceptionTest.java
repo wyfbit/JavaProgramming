@@ -39,6 +39,7 @@ public class SocketExceptionTest {
 		SocketAddress address=new InetSocketAddress(host, port);
 		Socket socket=null;
 		String result="";
+	
 		try {
 			long begin=System.currentTimeMillis();//计算开始连接的时间
 			socket=new Socket();
