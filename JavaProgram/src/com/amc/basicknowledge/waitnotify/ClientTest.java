@@ -9,7 +9,7 @@ public class ClientTest {
 		Vector shareQueue=new Vector();
 		int size=4;
 		Thread prodThread=new Thread(new Producer(shareQueue, size),"Producer");
-		Thread consThread=new Thread(new Consumer(shareQueue, size),"COnsumer");
+		Thread consThread=new Thread(new Consumer(shareQueue, size),"Consumer");
 		prodThread.start();
 		consThread.start();
 	}
